@@ -10,7 +10,8 @@ La aplicación **Nicestart** esta realizada para tener un buen impacto visual ta
 ![login activity](img/login.png)
 
 ## Código importante
-```public void openSignup(View v){
+```
+    public void openSignup(View v){
         Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
     }
