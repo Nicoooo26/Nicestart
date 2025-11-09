@@ -1,10 +1,22 @@
-## This is an introduction to awesome Interfaces you wanna cry
+# 🌟 NiceStart
+La aplicación **Nicestart** esta realizada para tener un buen impacto visual tanto en un dispositivo móvil como en una tablet.
 
-This **repository** will be used during the different activities that I will be guiding you through.
+## Detalles técnicos
+- Lenguaje principal: **Java**
+- IDE: **Android Studio**
+- Libreria utilizada: **Material 3**
 
+## Vista App Login
 ![login activity](img/login.png)
 
-I'll meet you over there, can't wait to get started!
+## Código importante
+```public void openSignup(View v){
+        Intent intent = new Intent(Login.this, Signup.class);
+        startActivity(intent);
+    }
+```
+Este código es importante para desplazarnos entre los distintos 'Activity'.
 
->This repository is licensed under
+
+>Repositorio bajo licencia
 >[Creativecommons Org Licenses By Sa 4](http://creativecommons.org/licenses/by-sa/4.0/)
