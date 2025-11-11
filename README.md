@@ -8,6 +8,8 @@ La aplicación **Nicestart** esta realizada para tener un buen impacto visual ta
 
 ## Vista App Login
 ![login activity](img/login.png)
+## Vista App Register
+![register activity](img/register.png)
 
 ## Código importante
 ```
@@ -17,6 +19,24 @@ La aplicación **Nicestart** esta realizada para tener un buen impacto visual ta
     }
 ```
 Este código es importante para desplazarnos entre los distintos 'Activity'.
+
+```
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        />
+```
+Guideline nos permite ajustar el contenido al dispositivo añadiendo márgenes horizontales.
 
 
 >Repositorio bajo licencia
