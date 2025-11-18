@@ -1,8 +1,11 @@
 package com.example.nicestart;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -20,6 +23,11 @@ public class Splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
         openApp();
+
+        ImageView logoSplash = findViewById(R.id.logo);
+
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.blink);
+        logoSplash.startAnimation(myanim);
 
         ImageView mSea = findViewById(R.id.backView);
 
