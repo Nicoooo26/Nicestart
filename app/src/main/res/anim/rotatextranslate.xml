@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
     <translate
-        android:fromYDelta="0"
-        android:toYDelta="0"
-        android:fromXDelta="-100%"
-        android:toXDelta="100%"
-        android:duration="600"
+        android:fromYDelta="450%"
+        android:toYDelta="0%"
+        android:duration="2000"
+        android:fillAfter="false"/>
+
+    <scale
+        android:startOffset="2000"
+        android:fromXScale="1"
+        android:toXScale="1.15"
+        android:fromYScale="1"
+        android:toYScale="1.15"
+        android:duration="1000"
         android:repeatCount="infinite"
         android:repeatMode="reverse"
-        />
-    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
-        android:duration="500"
-        android:fillAfter="true"
-        android:fromDegrees="0"
         android:pivotX="50%"
-        android:pivotY="50%"
+        android:pivotY="50%" />
+
+    <rotate
+        android:startOffset="2000"
+        android:fromDegrees="0"
         android:toDegrees="360"
+        android:duration="3000"
         android:repeatCount="infinite"
-        android:repeatMode="restart"
-        />
+        android:pivotX="50%"
+        android:pivotY="50%" />
+
 </set>
