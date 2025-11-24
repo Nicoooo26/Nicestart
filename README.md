@@ -1,7 +1,10 @@
 # 🌟 NiceStart
 La aplicación **Nicestart** esta realizada para tener un buen impacto visual tanto en un dispositivo móvil como en una tablet.
+Consta de una pantalla Splash al iniciar la aplcación que te muestra una pequeña animación.
+Posteriormente entras a un Login desde el que puedes ir a registro o a la pantalla principal.
+Además, existe una pantalla perfil para mostrar los datos del usuario.
 
-## Detalles técnicos
+## ⚙️ Detalles técnicos
 - Lenguaje principal: **Java**
 - IDE: **Android Studio**
 - Libreria utilizada: **Material 3**
@@ -9,21 +12,25 @@ La aplicación **Nicestart** esta realizada para tener un buen impacto visual ta
 ## 📱 Capturas
 
 ### 🔐 Login
-![login](img/login.png)
+![login-screen](img/login.png)
 
 ### 📝 Registro
-![register](img/register.png)
+![register-screen](img/register.png)
 
 ### 👤 Perfil
-![profile](img/profile.png)
+![profile-screen](img/profile.png)
 
 ### 🏠 Pantalla Principal
-![main](img/main.png)
+![main-screen](img/main.png)
 
 ### 🚀 Splash
-![splash](img/splash.png)
+![splash-screen](img/splash.png)
 
-## Código importante
+## ✨ Animación del Splash
+
+aqui va la animacion.
+
+## 🧩 Código importante
 ```
     public void openSignup(View v){
         Intent intent = new Intent(Login.this, Signup.class);

@@ -11,6 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="200dp"
+        android:contentDescription="@string/profile_picture"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +23,7 @@
         app:layout_constraintTop_toBottomOf="@id/profileImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="USER"
+        android:text="@string/user"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -45,41 +46,23 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="2">
-            <TextView
+            <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Email :"
-                android:textStyle="bold"
+                android:src="@drawable/email"
+                android:contentDescription="@string/email_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"
                 />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="user@gmail.com"
+                android:text="@string/email"
                 android:textStyle="bold"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:backgroundTint="@color/blue_100"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Github user :"
-                android:textStyle="bold"
-                />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="useer26"
-                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:padding="4dp"
                 />
         </LinearLayout>
         <LinearLayout
@@ -89,19 +72,49 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:weightSum="2">
-            <TextView
+            <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Teléfono :"
-                android:textStyle="bold"
+                android:src="@drawable/username"
+                android:contentDescription="@string/username_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"
                 />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="645231465"
+                android:text="@string/username_string"
                 android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:backgroundTint="@color/blue_100"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/telefono"
+                android:contentDescription="@string/telefono_icon"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/telefono"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:padding="4dp"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -113,7 +126,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="ABOUT ME"
+        android:text="@string/about_me"
         android:textSize="15sp"
         android:textStyle="italic|bold"
         />
@@ -121,7 +134,7 @@
         android:id="@+id/textAboutMe"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="´Soy un informático que está estudiando DAM y ha realizado este proyecto en la clase de Desarrollo de Interfaces, además tengo 20 años y quiero trabajar de informático.´"
+        android:text="@string/text_about_me"
         android:textStyle="italic"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@id/guideline1"
