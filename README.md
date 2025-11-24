@@ -6,34 +6,22 @@ La aplicación **Nicestart** esta realizada para tener un buen impacto visual ta
 - IDE: **Android Studio**
 - Libreria utilizada: **Material 3**
 
-## 📱 Capturas de Pantalla
+## 📱 Capturas
 
-### 🔐 Login / Registro
-| Login | Registro |
-|-------|----------|
-| ![login](img/login.png) | ![register](img/register.png) |
+### 🔐 Login
+![login](img/login.png)
 
----
+### 📝 Registro
+![register](img/register.png)
 
 ### 👤 Perfil
-| Perfil |
-|--------|
-| ![profile](img/profile.png) |
+![profile](img/profile.png)
 
----
-
-### 🏠 Principal
-| Principal |
-|-----------|
-| ![main](img/main.png) |
-
----
+### 🏠 Pantalla Principal
+![main](img/main.png)
 
 ### 🚀 Splash
-| Splash |
-|--------|
-| ![splash](img/splash.png) |
-
+![splash](img/splash.png)
 
 ## Código importante
 ```
