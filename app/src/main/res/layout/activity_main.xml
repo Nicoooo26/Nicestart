@@ -7,7 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".Main">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myMainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/textSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     <TextView
+        android:id="@+id/mycontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
