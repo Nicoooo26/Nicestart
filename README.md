@@ -27,8 +27,7 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 ![splash-screen](img/splash.png)
 
 ## ✨ Animación del Splash
-
-aqui va la animacion.
+![animacion splash](img/gifs/animation.gif)
 
 ## 🧩 Código importante
 ```
