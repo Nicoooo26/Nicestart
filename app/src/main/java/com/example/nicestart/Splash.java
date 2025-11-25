@@ -24,11 +24,6 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         openApp();
 
-        ImageView logoSplash = findViewById(R.id.logo);
-
-        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.rotatextranslate);
-        logoSplash.startAnimation(myanim);
-
         ImageView mSea = findViewById(R.id.backView);
 
         Glide.with(this)

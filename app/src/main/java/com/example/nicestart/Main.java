@@ -93,7 +93,7 @@ public class Main extends AppCompatActivity {
         }
         return false;
     }
-
+    // IMPLEMENTING SWIPE MENU
     protected SwipeRefreshLayout.OnRefreshListener
         mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener(){
         @Override
