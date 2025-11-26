@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -32,6 +33,7 @@ public class Login extends AppCompatActivity {
 //                .circleCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                 .into(mGirl);
+
     }
 
     public void openMain(View v){

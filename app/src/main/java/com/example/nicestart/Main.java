@@ -19,6 +19,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import io.github.muddz.styleabletoast.StyleableToast;
+
 public class Main extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
@@ -28,10 +30,10 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
+//Para el context menu
         TextView mycontext = findViewById(R.id.mycontext);
         registerForContextMenu(mycontext);
-
+//Para el swipe menu
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
     }
@@ -54,15 +56,12 @@ public class Main extends AppCompatActivity {
         if (id == R.id.settings) {
 //            showAlertDialogButtonClicked(Main.this);
 
-            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
-            toast.show();
-
+            StyleableToast.makeText(this, "Pulsado settings!", R.style.mytoast).show();
         }
         if (id == R.id.copy) {
             Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast.show();
         }
-
         if (id == R.id.item3) {
 //            Intent intent = new Intent(Main.this, MainBab.class);
 //            startActivity(intent);
@@ -114,6 +113,7 @@ public class Main extends AppCompatActivity {
                     });
 
             snackbar.show();
+// Esta linea tiene que estar aunque añadas toast, lo demas es comentable.
             swipeLayout.setRefreshing(false);
         }
     };

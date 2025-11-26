@@ -26,14 +26,26 @@
 
         </TextView>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-    <TextView
-        android:id="@+id/mycontext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <com.balysv.materialripple.MaterialRippleLayout
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleColor="#3000BCD4"
+        app:mrl_rippleRoundedCorners="12dp"
+        app:mrl_rippleAlpha="0.2"
+        >
+
+        <TextView
+            android:id="@+id/mycontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/homemade_apple"
+            android:text="Hello World!" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
