@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -10,13 +11,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
@@ -63,13 +67,11 @@ public class Main extends AppCompatActivity {
             toast.show();
         }
 
-        if (id == R.id.item3) {
-//            Intent intent = new Intent(Main.this, MainBab.class);
-//            startActivity(intent);
+        if (id == R.id.item5) {
+            showAlertDialogButtonClicked(Main.this);
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     // IMPLEMENTING CONTEXT MENU
     @Override
@@ -117,6 +119,48 @@ public class Main extends AppCompatActivity {
             swipeLayout.setRefreshing(false);
         }
     };
+
+    public void showAlertDialogButtonClicked(Main view){
+        // setup de alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+        // el dialogo estandar tiene titulo/icono pero podemos sustituirlo por un XML a medida
+        //builder.setTitle("NiceStart!");
+        //builder.setMessage("¿Que deseas hacer?");
+        //builder.setIcon(R.drawable.mailchimp);
+
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view,null));
+        builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                System.exit(0);
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast toast0 = Toast.makeText(Main.this, "Gracias por continuar en NiceStart :)", Toast.LENGTH_LONG);
+                toast0.show();
+            }
+        });
+        builder.setNeutralButton("Go to Profile", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(Main.this, Profile.class);
+                startActivity(intent);
+//                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(this, R.color.purple_700));
+        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(ContextCompat.getColor(this, R.color.red));
+        dialog.getButton(AlertDialog.BUTTON_NEUTRAL).setTextColor(ContextCompat.getColor(this, R.color.purple_700));
+
+    }
 
 }
 
