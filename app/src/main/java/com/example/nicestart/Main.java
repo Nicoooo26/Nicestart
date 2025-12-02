@@ -55,15 +55,13 @@ public class Main extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if (id == R.id.settings) {
+        if (id == R.id.profile) {
 //            showAlertDialogButtonClicked(Main.this);
-
-            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
-            toast.show();
-
+            Intent intent = new Intent(Main.this, Profile.class);
+            startActivity(intent);
         }
-        if (id == R.id.copy) {
-            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+        if (id == R.id.settings) {
+            Toast toast = Toast.makeText(this, "Go to Settings", Toast.LENGTH_LONG);
             toast.show();
         }
 
@@ -143,10 +141,10 @@ public class Main extends AppCompatActivity {
                 toast0.show();
             }
         });
-        builder.setNeutralButton("Go to Profile", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("Go to Login", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Main.this, Profile.class);
+                Intent intent = new Intent(Main.this, Login.class);
                 startActivity(intent);
 //                dialog.dismiss();
             }
