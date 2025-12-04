@@ -10,7 +10,10 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 - Libreria utilizada: **Material 3**
 
 ## 📱 Capturas
-
+| 🔐 Login | 📝 Registro | 👤 Perfil |
+|----------|-----------|-----------|
+| ![login-screen](img/login.png)  | ![register-screen](img/register.png)    | ![profile-screen](img/profile.png)   |
+| Dato A   | Dato B    | Dato C    |
 ### 🔐 Login
 ![login-screen](img/login.png)
 
