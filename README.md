@@ -21,10 +21,12 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 ## ✨ Animaciones
 | 🎨 Splash                                   | 📁 Menu                              | 
 |---------------------------------------------|--------------------------------------|
-| ![animacion splash](img/gifs/animation.gif) | ![animacion splash](img/gifs/animation.gif) |
+| ![animacion splash](img/gifs/animation.gif) | ![animacion menu](img/gifs/menu.gif) |
 
 
 ## 🧩 Código importante
+[On Create](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L49-L59)
+
 ```
     public void openSignup(View v){
         Intent intent = new Intent(Login.this, Signup.class);
