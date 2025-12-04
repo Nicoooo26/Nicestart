@@ -32,7 +32,7 @@ public class Github extends AppCompatActivity {
         setContentView(R.layout.activity_github);
 
         WebView mycontext = findViewById(R.id.vistaweb);
-        registerForContextMenu(mycontext);
+        registerForContextMenu(mycontext); // Activa menú contextual en WebView
 
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
@@ -40,17 +40,17 @@ public class Github extends AppCompatActivity {
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
 
         WebSettings s = miVisorWeb.getSettings();
-        s.setJavaScriptEnabled(true);
-        s.setDomStorageEnabled(true);
-        miVisorWeb.setWebViewClient(new WebViewClient());
-        miVisorWeb.loadUrl("https://github.com/Nicoooo26");
+        s.setJavaScriptEnabled(true); // Habilita JS
+        s.setDomStorageEnabled(true); // Permite almacenamiento web
+        miVisorWeb.setWebViewClient(new WebViewClient()); // Abre dentro de la app
+        miVisorWeb.loadUrl("https://github.com/Nicoooo26"); // Carga perfil GitHub
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener(){
         @Override
         public void onRefresh() {
-            miVisorWeb.reload();
+            miVisorWeb.reload(); // Recarga página
             swipeLayout.setRefreshing(false);
         }
     };

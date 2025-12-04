@@ -37,10 +37,12 @@ public class Main extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-       TextView mycontext2 = findViewById(R.id.mycontext);
+       TextView textSwipe = findViewById(R.id.mycontext);
+       registerForContextMenu(textSwipe);
+
         WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
-        registerForContextMenu(mycontext2);
+
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
@@ -75,7 +77,6 @@ public class Main extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.profile) {
-//            showAlertDialogButtonClicked(Main.this);
             Intent intent = new Intent(Main.this, Profile.class);
             startActivity(intent);
         }
@@ -91,7 +92,6 @@ public class Main extends AppCompatActivity {
             Intent intent = new Intent(Main.this, Github.class);
             startActivity(intent);
         }
-
         if (id == R.id.item5) {
             showAlertDialogButtonClicked(Main.this);
         }
@@ -121,6 +121,7 @@ public class Main extends AppCompatActivity {
         return false;
     }
 
+    // IMPLEMENTING SWIPE REFRESH
     protected SwipeRefreshLayout.OnRefreshListener
         mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener(){
         @Override
@@ -147,6 +148,7 @@ public class Main extends AppCompatActivity {
         }
     };
 
+    //IMPLEMENTING ALERT DIALOG
     public void showAlertDialogButtonClicked(Main view){
         // setup de alert builder
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);

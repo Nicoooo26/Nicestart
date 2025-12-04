@@ -27,10 +27,11 @@ public class Splash extends AppCompatActivity {
         ImageView logoSplash = findViewById(R.id.logo);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.rotatextranslate);
-        logoSplash.startAnimation(myanim);
+        logoSplash.startAnimation(myanim); // Animación del logo
 
         ImageView mSea = findViewById(R.id.backView);
 
+// Carga imagen online en el fondo
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
 //                .transition(DrawableTransitionOptions.withCrossFade(100))
@@ -39,8 +40,6 @@ public class Splash extends AppCompatActivity {
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                   .circleCrop()
                 .into(mSea);
-
-
     }
 
     private void openApp() {
@@ -53,9 +52,9 @@ public class Splash extends AppCompatActivity {
                         .this, Login.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
+                startActivity(intent); // Cambia a Login
             }
-        }, 5000);
+        }, 5000); // 5 segundos de splash
     }
 
 }

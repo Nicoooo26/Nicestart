@@ -22,15 +22,14 @@ public class Profile extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
 
-
         ImageView profileImg = findViewById(R.id.profileImg);
 
         Glide.with(this)
-                .load(R.drawable.profile)
+                .load(R.drawable.profile) // Carga una imagen local
 //                .transition(DrawableTransitionOptions.withCrossFade(1000))
                 .centerCrop()
                 .circleCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
-                .into(profileImg);
+                .into(profileImg); // La muestra en el ImageView
     }
 }

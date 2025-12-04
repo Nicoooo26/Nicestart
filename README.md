@@ -26,9 +26,9 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 
 ## 🧩 Código importante
 
-### [Splash.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java)
-- [Animación](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L27-L30)
-- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L32-L41)
+### [Splash.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java)
+- [Animación](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L27-L30)
+- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L32-L41)
 
 ```
     public void openSignup(View v){

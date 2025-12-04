@@ -34,12 +34,15 @@ public class Login extends AppCompatActivity {
                 .into(mGirl);
     }
 
+    // Metodo que abre el Main
     public void openMain(View v){
         Intent intent = new Intent(Login.this, Main.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
+
+    // Metodo que abre el SignUp
     public void openSignup(View v){
         Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
