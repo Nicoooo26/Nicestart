@@ -57,7 +57,7 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 ### [Menu Context](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/menu_context.xml)
 
 ## 🌐 Codigo importante
-- Estilo para el Action Bar dentro del Theme.xml
+> Estilo para el Action Bar dentro del Theme.xml
 ```
      <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@android:color/transparent</item>
