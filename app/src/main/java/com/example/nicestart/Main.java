@@ -7,6 +7,9 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +29,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class Main extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeLayout;
+    private WebView miVisorWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +37,26 @@ public class Main extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext = findViewById(R.id.mycontext);
+//        TextView mycontext = findViewById(R.id.mycontext);
+        WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+        miVisorWeb = (WebView) findViewById(R.id.vistaweb);
+
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+                "img { width:100%; height:100%; object-fit:cover; }" +   // ❤️ el equivalente a centerCrop
+                "</style></head>" +
+                "<body>" +
+                "<img src='https://thispersondoesnotexist.com' />" +
+                "</body></html>";
+
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+
     }
 
 // IMPLEMENTING APP BAR MENU
@@ -60,9 +79,17 @@ public class Main extends AppCompatActivity {
             Intent intent = new Intent(Main.this, Profile.class);
             startActivity(intent);
         }
-        if (id == R.id.settings) {
-            Toast toast = Toast.makeText(this, "Go to Settings", Toast.LENGTH_LONG);
+        if (id == R.id.seguridad) {
+            Toast toast = Toast.makeText(this, "Go to Seguridad", Toast.LENGTH_LONG);
             toast.show();
+        }
+        if (id == R.id.privacidad) {
+            Toast toast = Toast.makeText(this, "Go to Privacidad", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        if (id == R.id.github) {
+            Intent intent = new Intent(Main.this, Github.class);
+            startActivity(intent);
         }
 
         if (id == R.id.item5) {
@@ -114,6 +141,8 @@ public class Main extends AppCompatActivity {
                     });
 
             snackbar.show();
+
+            miVisorWeb.reload();
             swipeLayout.setRefreshing(false);
         }
     };

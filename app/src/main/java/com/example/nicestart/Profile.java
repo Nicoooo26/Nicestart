@@ -1,6 +1,9 @@
 package com.example.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -29,5 +32,19 @@ public class Profile extends AppCompatActivity {
                 .circleCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
                 .into(profileImg);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_appback, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.back) {
+            Intent intent = new Intent(Profile.this, Main.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

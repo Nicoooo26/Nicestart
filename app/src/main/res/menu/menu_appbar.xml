@@ -7,18 +7,17 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/settings"
-        android:title="setttings"
+        android:title="settings"
         android:icon="@drawable/ic_action_name"
         app:showAsAction="ifRoom" >
         <menu>
             <item
-
-                android:id="@+id/item3"
+                android:id="@+id/seguridad"
                 android:title="Seguridad"
                 app:showAsAction="never" />
             <item
 
-                android:id="@+id/item4"
+                android:id="@+id/privacidad"
                 android:title="Privacidad"
                 app:showAsAction="never" />
             <item
@@ -29,4 +28,9 @@
                 android:icon="@drawable/logout_icon"/>
         </menu>
     </item>
+    <item
+        android:id="@+id/github"
+        android:title="github"
+        android:icon="@drawable/ic_github"
+        app:showAsAction="ifRoom" />
 </menu>
