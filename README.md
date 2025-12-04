@@ -25,7 +25,10 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 
 
 ## 🧩 Código importante
-[On Create](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L49-L59)
+
+### [Splash.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java)
+- [Animación](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L27-L30)
+- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L32-L41)
 
 ```
     public void openSignup(View v){
@@ -52,7 +55,6 @@ Este código es importante para desplazarnos entre los distintos 'Activity'.
         />
 ```
 Guideline nos permite ajustar el contenido al dispositivo añadiendo márgenes horizontales.
-
 
 >Repositorio bajo licencia
 >[Creativecommons Org Licenses By Sa 4](http://creativecommons.org/licenses/by-sa/4.0/)
