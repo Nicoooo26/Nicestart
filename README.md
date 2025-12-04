@@ -13,6 +13,7 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | 🔐 Login                         | 📝 Registro | 🏠 Pantalla Principal |
 |----------------------------------|-----------|-----------|
 | ![login-screen](img/login.png)   | ![register-screen](img/register.png)    | ![main-screen](img/main.png)   |
+
 | 🐙 GitHub                        | 🚀 Splash | 👤 Perfil |
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
