@@ -10,10 +10,12 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 - Libreria utilizada: **Material 3**
 
 ## 📱 Capturas
-| 🔐 Login | 📝 Registro | 👤 Perfil |
-|----------|-----------|-----------|
-| ![login-screen](img/login.png)  | ![register-screen](img/register.png)    | ![profile-screen](img/profile.png)   |
-| Dato A   | Dato B    | Dato C    |
+| 🔐 Login                         | 📝 Registro | 🏠 Pantalla Principal |
+|----------------------------------|-----------|-----------|
+| ![login-screen](img/login.png)   | ![register-screen](img/register.png)    | ![main-screen](img/main.png)   |
+| 🐙 GitHub                        | 🚀 Splash | 👤 Perfil |
+| ----------                       |-----------|-----------|
+| ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
 ### 🔐 Login
 ![login-screen](img/login.png)
 
