@@ -24,37 +24,52 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | ![animacion splash](img/gifs/animation.gif) | ![animacion menu](img/gifs/menu.gif) |
 
 
-## 🧩 Código importante
+## 🧩 Funcionalidades
 
 ### [Splash.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java)
 - [Animación](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L27-L30)
-- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L32-L41)
+- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L32-L43)
+- [Open Login before 5sec](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Splash.java#L45-L57)
 
-```
-    public void openSignup(View v){
-        Intent intent = new Intent(Login.this, Signup.class);
-        startActivity(intent);
-    }
-```
-Este código es importante para desplazarnos entre los distintos 'Activity'.
+### [Login.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Login.java)
+- [Glide background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Login.java#L25-L35)
+- [Open Main](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Login.java#L38-L43)
+- [Open SignUp](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Login.java#L46-L49)
 
+### [Signup.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Signup.java)
+> Se repiten las funcionalidades
+
+### [Profile.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Profile.java)
+- [Glide Profile Picture](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Profile.java#L25-L33)
+
+### [Main.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java)
+- [Random people background](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L43-L60)
+- [Implementing App Bar Menu](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L65-L99)
+- [Implementing Context Menu](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L102-L122)
+- [Implementing Swipe Refresh](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L125-L149)
+- [Implementing Alert Dialog](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L152-L192)
+
+### [GitHub.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java)
+- [Cargar vista Github](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java#L40-L46)
+
+### [Menu App Bar](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/menu_appbar.xml)
+
+### [Menu Context](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/menu_context.xml)
+
+## 🌐 Codigo importante
+- Estilo para el Action Bar dentro del Theme.xml
 ```
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2"
-        />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8"
-        />
+     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Theme.Nicestart" parent="Base.Theme.Nicestart">
+        <item name="colorPrimary">@color/blue_100</item>
+        <item name="colorOnPrimary">@color/blue_100</item>
+        <item name="actionBarStyle">@style/TransparentActionBar</item>
+    </style>
 ```
-Guideline nos permite ajustar el contenido al dispositivo añadiendo márgenes horizontales.
 
 >Repositorio bajo licencia
 >[Creativecommons Org Licenses By Sa 4](http://creativecommons.org/licenses/by-sa/4.0/)
