@@ -37,7 +37,7 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 - [Open SignUp](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Login.java#L46-L49)
 
 ### [Signup.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Signup.java)
-> Se repiten las funcionalidades
+> Se repiten las funcionalidades del Login
 
 ### [Profile.java](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Profile.java)
 - [Glide Profile Picture](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Profile.java#L25-L33)
