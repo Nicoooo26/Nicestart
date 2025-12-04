@@ -16,20 +16,6 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | 🐙 GitHub                        | 🚀 Splash | 👤 Perfil |
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
-### 🔐 Login
-![login-screen](img/login.png)
-
-### 📝 Registro
-![register-screen](img/register.png)
-
-### 👤 Perfil
-![profile-screen](img/profile.png)
-
-### 🏠 Pantalla Principal
-![main-screen](img/main.png)
-
-### 🚀 Splash
-![splash-screen](img/splash.png)
 
 ## ✨ Animación del Splash
 ![animacion splash](img/gifs/animation.gif)
