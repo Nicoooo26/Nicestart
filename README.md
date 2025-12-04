@@ -17,8 +17,11 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
 
-## ✨ Animación del Splash
-![animacion splash](img/gifs/animation.gif)
+## ✨ Animaciones
+| 🎨 Splash                                   | 📁 Menu                              | 
+|---------------------------------------------|--------------------------------------|
+| ![animacion splash](img/gifs/animation.gif) | ![animacion splash](img/gifs/animation.gif) |
+
 
 ## 🧩 Código importante
 ```
