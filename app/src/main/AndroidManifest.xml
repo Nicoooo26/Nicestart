@@ -15,10 +15,12 @@
         android:theme="@style/Theme.Nicestart">
         <activity
             android:name=".Github"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Main"/>
         <activity
             android:name=".Profile"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Main"/>
         <activity
             android:name=".Splash"
             android:exported="true"
@@ -26,7 +28,6 @@
             android:theme="@style/Theme.Nicestart.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

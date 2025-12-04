@@ -37,10 +37,10 @@ public class Main extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-//        TextView mycontext = findViewById(R.id.mycontext);
+       TextView mycontext2 = findViewById(R.id.mycontext);
         WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
-
+        registerForContextMenu(mycontext2);
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
