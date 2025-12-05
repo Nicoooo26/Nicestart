@@ -37,8 +37,8 @@ public class Main extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-//       TextView textSwipe = findViewById(R.id.mycontext);
-//       registerForContextMenu(textSwipe);
+         TextView textSwipe = findViewById(R.id.mycontext);
+         registerForContextMenu(textSwipe);
 
         WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
