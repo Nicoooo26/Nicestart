@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nicestart</string>
+    <string name="username">Usuario</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="signup">Registro</string>
+    <string name="cancel">Cancelar</string>
+    <string name="user">USUARIO</string>
+    <string name="about_me">SOBRE MI</string>
+</resources>

@@ -5,13 +5,14 @@
     <string name="signup">Sign up</string>
     <string name="cancel">Cancel</string>
     <string name="user">USER</string>
-    <string name="email_icon">email_icon</string>
-    <string name="email">user@gmail.com</string>
-    <string name="username_icon">username_icon</string>
-    <string name="username_string">useer26</string>
-    <string name="telefono_icon">telefono_icon</string>
-    <string name="telefono">645231465</string>
     <string name="about_me">ABOUT ME</string>
-    <string name="text_about_me">´Soy un informático que está estudiando DAM y ha realizado este proyecto en la clase de Desarrollo de Interfaces, además tengo 20 años y quiero trabajar de informático.´</string>
-    <string name="profile_picture">profile_picture</string>
+
+    <string name="email_icon" translatable="false">email_icon</string>
+    <string name="email" translatable="false">user@gmail.com</string>
+    <string name="username_icon" translatable="false">username_icon</string>
+    <string name="username_string" translatable="false">useer26</string>
+    <string name="telefono_icon" translatable="false">telefono_icon</string>
+    <string name="telefono" translatable="false">645231465</string>
+    <string name="text_about_me" translatable="false">´Soy un informático que está estudiando DAM y ha realizado este proyecto en la clase de Desarrollo de Interfaces, además tengo 20 años y quiero trabajar de informático.´</string>
+    <string name="profile_picture" translatable="false">profile_picture</string>
 </resources>
