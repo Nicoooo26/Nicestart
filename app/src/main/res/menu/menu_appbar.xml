@@ -9,6 +9,7 @@
         android:id="@+id/settings"
         android:title="settings"
         android:icon="@drawable/ic_action_name"
+        android:iconTint="@color/black_white"
         app:showAsAction="ifRoom" >
         <menu>
             <item
@@ -32,5 +33,6 @@
         android:id="@+id/github"
         android:title="github"
         android:icon="@drawable/ic_github"
+        android:iconTint="@color/black_white"
         app:showAsAction="ifRoom" />
 </menu>
