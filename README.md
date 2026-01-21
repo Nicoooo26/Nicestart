@@ -49,12 +49,16 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 - [Implementing Swipe Refresh](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L125-L149)
 - [Implementing Alert Dialog](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L152-L192)
 
+### [MainBab](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/MainBaB.java)
+
 ### [GitHub](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java)
 - [Cargar vista Github](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java#L40-L46)
 
 ### [Menu App Bar](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/menu_appbar.xml)
 
 ### [Menu Context](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/menu_context.xml)
+
+### [Menu Bottom App Bar](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/res/menu/bottom_app_bar_menu.xml)
 
 ## 🌐 Codigo importante
 > Estilo para el Action Bar dentro del Theme.xml
@@ -79,3 +83,13 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 
 >Repositorio bajo licencia
 >[Creativecommons Org Licenses By Sa 4](http://creativecommons.org/licenses/by-sa/4.0/)
+
+## 🌙 DarkMode 
+![Dark Mode](img/darkmode.png)
+> La app coge el modo oscuro/claro del sistema y se adapta a él usando colores previamente creados.
+![Colors](img/colors.png)
+
+## 🔠 Language
+![Language settings](img/strings.png)
+> Se adapta al idioma del sistema que por ahora puede ser español o inglés. 
+
