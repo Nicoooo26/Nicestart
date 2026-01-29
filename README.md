@@ -18,10 +18,15 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
 
+| 🏠 MainBab                         |
+|------------------------------------|
+| ![mainbab-screen](img/mainBab.png) |
+
+
 ## ✨ Animaciones Y funcionalidad Menu
-| 🎨 Splash                                   | 📁 Menu                              | 
-|---------------------------------------------|--------------------------------------|
-| ![animacion splash](img/gifs/animation.gif) | ![animacion menu](img/gifs/menu.gif) |
+| 🎨 Splash                   | 📁 Menu              | 📁 Menu                | 
+|-----------------------------|----------------------|------------------------|
+| ![animacion splash](img/gifs/animation.gif) | ![animacion menu](img/gifs/menu.gif) | ![animacion menu](img/gifs/menu.gif) |
 
 
 ## 🧩 Funcionalidades
@@ -50,6 +55,9 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 - [Implementing Alert Dialog](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Main.java#L152-L192)
 
 ### [MainBab](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/MainBaB.java)
+- [Click event FAB](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/MainBaB.java#L34-L40)
+- [Click bottom app bar](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/MainBaB.java#L42-L62)
+- [Show bottom sheet dialog](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/MainBaB.java#L65-L105)
 
 ### [GitHub](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java)
 - [Cargar vista Github](https://github.com/Nicoooo26/Nicestart/blob/master/app/src/main/java/com/example/nicestart/Github.java#L40-L46)
