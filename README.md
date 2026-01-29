@@ -18,8 +18,8 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
 
-| 🏠 MainBab                         |
-|------------------------------------|
+| 🏠 MainBab |
+|-----------|
 | ![mainbab-screen](img/mainBab.png) |
 
 
