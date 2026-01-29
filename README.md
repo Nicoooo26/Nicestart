@@ -20,7 +20,7 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 
 | 🏠 MainBab | | |
 |-----------|-|-|
-| ![mainbab-screen](img/mainBab.png) |
+| ![mainbab-screen](img/mainBab.png) | | |
 
 
 ## ✨ Animaciones Y funcionalidad Menu
