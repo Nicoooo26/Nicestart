@@ -18,9 +18,9 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 | ----------                       |-----------|-----------|
 | ![github-screen](img/github.png) | ![splash-screen](img/splash.png)    | ![profile-screen](img/profile.png)   |
 
-| 🏠 MainBab | | |
-|-----------|-|-|
-| ![mainbab-screen](img/mainBab.png) | | |
+| 🏠 MainBab |
+|-----------|
+|<img src="img/mainBab.png" width="220"/>|
 
 
 ## ✨ Animaciones Y funcionalidad Menu
