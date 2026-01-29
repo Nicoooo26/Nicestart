@@ -24,8 +24,8 @@ Además, existe una pantalla perfil para mostrar los datos del usuario.
 
 
 ## ✨ Animaciones Y funcionalidad Menu
-| 🎨 Splash                   | 📁 Menu              | 📁 Menu                                     | 
-|-----------------------------|----------------------|---------------------------------------------|
+| 🎨 Splash                 | 📁 Menu              | 📁 Main Bab | 
+|---------------------------|----------------------|----------------------|
 | ![animacion splash](img/gifs/animation.gif) | ![animacion menu](img/gifs/menu.gif) | ![animacion main Bab](img/gifs/mainBab.gif) |
 
 
