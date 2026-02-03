@@ -1,8 +1,8 @@
 # 🌟 NiceStart
 La aplicación **Nicestart** esta realizada para tener un buen impacto visual tanto en un dispositivo móvil como en una tablet.
-Consta de una pantalla Splash al iniciar la aplcación que te muestra una pequeña animación.
+Consta de una pantalla Splash al iniciar la aplicación que te muestra una pequeña animación.
 Posteriormente entras a un Login desde el que puedes ir a registro o a la pantalla principal.
-Además, existe una pantalla perfil para mostrar los datos del usuario.
+Además, dentro de la pantalla inicial tienes varias opciones dentro de menus de navegación. 
 
 ## ⚙️ Detalles técnicos
 - Lenguaje principal: **Java**
